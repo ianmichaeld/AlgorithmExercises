@@ -1,9 +1,10 @@
-const binToDec = bin => {
-  let red = (bin + '').split('').reduceRight(
+const binToDec = binary => {
+  let decimal = (binary + '').split('').reduceRight(
     (reducer, digit) => {
-      reducer.dec += digit * Math.pow(2, reducer.pow++)
+      reducer.number += digit * Math.pow(2, reducer.power++)
+      return reducer
     },
-    { dec: 0, pow: 0 }
+    { number: 0, power: 0 }
   )
-  return red.dec
+  return decimal.number
 }
