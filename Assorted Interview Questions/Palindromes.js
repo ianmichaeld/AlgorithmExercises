@@ -55,3 +55,18 @@ let list = [
 ]
 
 list.forEach(word => isPalindrome(word))
+
+/* A better optimized palindrome check that uses pointers
+rather than array methods. However, this treats spaces as a relevant character.
+
+function isPalindrome(string) {
+  let left = 0
+	let right = string.length - 1
+	let result = true
+	while( left <= right && result ) {
+		result = string[left++] === string[right--]
+	}
+	return result
+}
+
+*/
