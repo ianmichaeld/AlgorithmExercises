@@ -41,7 +41,7 @@ Function runLengthEncode(str){
 		var j = i+1;
 		while(c===str[j] && j < str.length){
 			obj.length += 1;
-			J++;
+			j++;
 
 		}
 		i==j-1;
@@ -83,13 +83,13 @@ Function runLengthEncodeString(str){
 	Var l = str.length;
 	for (var i =0; i < l; i++){
 		Var c = str[i]
-		Var j = 1+1;
+		Var j = i+1;
 		Var count = 1;
 		while(c === str[j] && j < str.length && count < 9){
 			J++;
 			Count++;
 		}
-		I = j-1;
+		i = j-1;
 		Result += `${c}${count}`;
 	}
 	Return result;
