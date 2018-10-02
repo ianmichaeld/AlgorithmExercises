@@ -1,6 +1,4 @@
-/* Given a string, return the characters of the string sorted first by the
-number of occurances of that character (decreasing) and in the case of
-characters appearing the same number of times by lexicographical order.
+/* Given a string, return the characters of the string sorted first by the number of occurances of that character (decreasing) and in the case of characters appearing the same number of times by lexicographical order.
 Examples:
 'bbaaccc' => 'cccaabb'
 'abcddeeef' => 'eeeddabcf'
