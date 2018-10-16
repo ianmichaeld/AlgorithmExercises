@@ -1,5 +1,7 @@
 /*
-The question prompt does not specify how to treat characters that are found in s but not in t. In the implementation below, they will be sorted to the end of the string in their original order.
+The question prompt does not specify how to treat characters that are 
+found in s but not in t. In the implementation below, they will be sorted to 
+the end of the string in their original order. 
 */
 
 const sortByStrings = (s, t) => {
