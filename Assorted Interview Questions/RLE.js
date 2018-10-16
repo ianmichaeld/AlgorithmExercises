@@ -79,7 +79,7 @@ pppppppppppppppppppppppp
 */
 
 Function runLengthEncodeString(str){
-	Var Result =’’;
+	Var Result =’’
 	Var l = str.length;
 	for (var i =0; i < l; i++){
 		Var c = str[i]

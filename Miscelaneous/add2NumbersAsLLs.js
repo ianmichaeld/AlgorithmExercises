@@ -1,7 +1,10 @@
 /*
-Given two non-empty linked lists representing non-negative integers, with digits stored in reverse order with a single digit in each node, add the two numbers and return it as a linked list.
+Given two non-empty linked lists representing non-negative integers, with 
+digits stored in reverse order with a single digit in each node, add the two 
+numbers and return it as a linked list.
 
-Example: Given l1 is the linked list (5 -> 2 -> 7) and l2 is the linked list (9 -> 2 -> 4), return the linked list (4 -> 5 -> 1 -> 1) because 725 + 429 = 1154.
+Example: Given l1 is the linked list (5 -> 2 -> 7) and l2 is the linked list 
+(9 -> 2 -> 4), return the linked list (4 -> 5 -> 1 -> 1) because 725 + 429 = 1154.
  */
 
 function ListNode(val) {
