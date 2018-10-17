@@ -31,29 +31,27 @@ runLengthEncode('aaaaaaaabbbbbcdd') => [
 
 */
 
-Function runLengthEncode(str){
-	Var Result = [];
-	for(var i=0; i<str.length; i++){
-		Var obj = {};
-		Var c = str[i];
-		Obj.character = c;
-		Obj.length = 1;
-		var j = i+1;
-		while(c===str[j] && j < str.length){
-			obj.length += 1;
-			j++;
+const runLengthEncode = str => {
+  let result = []
+  for (let i = 0; i < str.length; i++) {
+    let obj = {}
+    let c = str[i]
+    obj.character = c
+    obj.length = 1
+    let j = i + 1
+    while (c === str[j] && j < str.length) {
+      obj.length += 1
+      j++
+    }
+    i = j - 1
 
-		}
-		i==j-1;
-
-		result.push(obj);
-	}
-	Return result;
+    result.push(obj)
+  }
+  return result
 }
 
-“aaaaa” => [{“a”: 5}]
-“aaaaa” => [{“character”: “a”, “length”: 5}]
-
+// “aaaaa” => [{“a”: 5}]
+// “aaaaa” => [{“character”: “a”, “length”: 5}]
 
 /*
 Takes in a string, and returns a run-length-encoded value
@@ -78,21 +76,21 @@ I = 8
 pppppppppppppppppppppppp
 */
 
-Function runLengthEncodeString(str){
-	Var Result =’’
-	Var l = str.length;
-	for (var i =0; i < l; i++){
-		Var c = str[i]
-		Var j = i+1;
-		Var count = 1;
-		while(c === str[j] && j < str.length && count < 9){
-			J++;
-			Count++;
-		}
-		i = j-1;
-		Result += `${c}${count}`;
-	}
-	Return result;
+const runLengthEncodeString = str => {
+  let result = ''
+  let l = str.length
+  for (let i = 0; i < l; i++) {
+    let c = str[i]
+    let j = i + 1
+    let count = 1
+    while (c === str[j] && j < str.length && count < 9) {
+      j++
+      count++
+    }
+    i = j - 1
+    result += `${c}${count}`
+  }
+  return result
 }
 
 /* Takes the input from runLengthEncode and returns the input string
@@ -123,21 +121,15 @@ runLengthEncode('aaaaaaaabbbbbcdd') => [
 ]
 */
 
-Function runLengthDecode(arr){
-	Var result = ‘’;
-	for(var item of arr){
-		for(var i=0; i<item.length; i++) {
-			Result += item.character;
-		}
-	}
-	Return result;
+const runLengthDecode = arr => {
+  let result = ''
+  for (let item of arr) {
+    for (let i = 0; i < item.length; i++) {
+      result += item.character
+    }
+  }
+  return result
 }
 
 // Takes the input from runLengthEncodeString and returns the input string
-function runLengthDecodeString(data) {
-
-}
-
-
-
-
+function runLengthDecodeString(data) {}

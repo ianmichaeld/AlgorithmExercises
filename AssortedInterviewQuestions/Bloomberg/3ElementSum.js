@@ -1,5 +1,5 @@
 /*
-Given nums, an array of integers, return an array of *unique* triplets of 
+Given nums, an array of integers, return an array of *unique* triplets of
 integers within nums that sum to 0.
 Ex: [-1, 0, 1, 2, -1, -4] => [[-1, 0, 1], [-1, -1, 2]]
 */
