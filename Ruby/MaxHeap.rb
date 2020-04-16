@@ -72,9 +72,9 @@ class MaxHeap
   def pop
     raise 'Your heap is empty.' if @size == 0
     max = @as_array.shift
-    @as_array.unshift(@as_array.pop)
-    cascade
     @size -= 1
+    @as_array.unshift(@as_array.pop) if @size > 0
+    cascade
     max
   end
 end
